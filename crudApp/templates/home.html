@@ -1,7 +1,7 @@
 <h1>hi</h1>
 
-{% for post in posts %}
-    <a href="{% url 'detail_post' post.id %}">{{post.title}}</a>
+{% for product in products %}
+    <a href="{% url 'detail_product' product.id %}">{{product.title}}</a>
     <br>
 {% endfor %}
-<a href="{% url 'create_post' %}">post 만들기</a>
+<a href="{% url 'create_product' %}">product 만들기</a>
